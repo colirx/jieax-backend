@@ -1,0 +1,2 @@
+# 保证在 Mybatis 启动之前加载 .env 配置文件中配置，必须要指定自定义的 EnvironmentPostProcessor
+org.springframework.boot.env.EnvironmentPostProcessor=com.colirx.jieax.common.processor.DotEnvProcessor
