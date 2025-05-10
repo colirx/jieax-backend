@@ -1,3 +1,5 @@
+server:
+  port: 9090
 spring:
   application:
     name: jieax-backend
@@ -27,5 +29,18 @@ spring:
       uri: ${SPRING_DATA_MONGODB_URI}
       username: ${SPRING_DATA_MONGODB_USERNAME}
       password: ${SPRING_DATA_MONGODB_PASSWORD}
-server:
-  port: 9090
+mybatis-plus:
+  # 逻辑删除配置
+  global-config:
+    db-config:
+      logic-delete-field: isDeleted
+      logic-delete-value: true
+      logic-not-delete-value: false
+jwt:
+  secret-key: ${JWT_SECRET-KEY}
+  public-key: ${JWT_PUBLIC-KEY}
+  private-key: ${JWT_PRIVATE-KEY}
+  # AK 超时时间 15min
+  access-token-expiration: 900000
+  # RK 超时时间 7day
+  refresh-token-expiration: 604800000

@@ -1,4 +1,4 @@
-package com.colirx.jieax.conf;
+package com.colirx.jieax.common.conf;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
